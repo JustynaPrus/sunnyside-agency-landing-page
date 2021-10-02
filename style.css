@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow';
+    font-weight: 400;
+}
+
+html {
+    --colorSoftRed: hsl(7, 99%, 70%);
+    --colorYellow: hsl(51, 100%, 49%);
+    --colorDarkBlue: hsl(212, 27%, 19%);
+    --colorDarkGrey: hsl(213, 9%, 39%);
+    --colorMediumGrey: hsl(232, 10%, 55%);
+    --colorGrey: hsl(210, 4%, 67%);
+    --colorBlue: hsl(198, 62%, 26%);
+    --colorDarkCyan: hsl(167, 40%, 24%);
+    --colorCyan: hsl(168, 34%, 41%);
+}
+
+.container {
+    position: relative;
+}
+
+image {
+    display: block;
+}
+
+.juice {
+    display: block;
+    width: 100%;
+}
+
+.arrow {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    color: white;
+}
+
+h1 {
+    font-size: 62px;
+    text-align: center;
+    font-family: 'Fraunces';
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    padding: 50px;
+}
+
+h2 {
+    font-size: 36px;
+    font-family: 'Fraunces';
+    color: var(--colorDarkBlue);
+    padding-bottom: 25px;
+}
+
+h3 {
+    font-size: 28px;
+    font-family: 'Fraunces';
+    color: var(--colorDarkBlue);
+    padding-bottom: 25px;
+}
+
+h4 {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Fraunces';
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    padding: 120px 0 80px 0;
+    color: var(--colorGrey);
+}
+
+p {
+    color: var(--colorMediumGrey);
+}
+
+p.grey {
+    color: var(--colorGrey);
+}
+
+button {
+    font-family: 'Fraunces';
+    font-weight: 900;
+    border: none;
+    background-color: white;
+    padding: 25px 0 0 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: transparent;
+    position: relative;
+}
+
+button:after {
+    display: block;
+    content: '';
+    width: 125px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--colorYellow);
+    position: absolute;
+    z-index: -1;
+    top: 35px;
+    left: -5px;
+    filter: opacity(0%);
+}
+
+button.red:after {
+    background-color: var(--colorSoftRed);
+}
+
+button:hover:after {
+    filter: opacity(100%);
+}
+
+nav {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    padding: 10px 35px;
+    cursor: pointer;
+}
+
+li.top:hover {
+    background-color: white;
+    color: var(--colorDarkBlue);
+    text-transform: uppercase;
+    border-radius: 25px;
+    font-family: 'Fraunces';
+    font-weight: 700;
+}
+
+li.bottom:hover {
+    color: white;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.main>* {
+    max-width: 50%;
+}
+
+.cirle {
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 10vw 0 10vw;
+}
+
+.square {
+    display: flex;
+}
+
+article {
+    position: relative;
+    max-width: 50%;
+}
+
+article>* {
+    max-width: 100%;
+}
+
+.text {
+    position: absolute;
+    bottom: -20%;
+    padding: 25%;
+    text-align: center;
+    line-height: 150%;
+}
+
+.photography {
+    color: var(--colorBlue);
+}
+
+.graphic {
+    color: var(--colorDarkCyan);
+}
+
+.box {
+    display: flex;
+    padding: 0 120px 0 120px;
+}
+
+.box>section {
+    padding: 0 20px 0 20px;
+    text-align: center;
+}
+
+.people>* {
+    line-height: 25px;
+    color: var(--colorDarkBlue);
+}
+
+.name {
+    font-family: 'Fraunces';
+    padding: 50px 0 10px 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: 150px;
+}
+
+.gallery>* {
+    max-width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--colorCyan);
+    color: var(--colorDarkCyan);
+    padding: 40px;
+}
+
+.logo {
+    filter: brightness(0) saturate(100%) invert(29%) sepia(10%) saturate(2196%) hue-rotate(116deg) brightness(90%) contrast(88%);
+    margin-bottom: 20px;
+}
+
+.icon {
+    padding: 60px 15px 40px 15px;
+    cursor: pointer;
+    color: var(--colorDarkCyan);
+}
+
+.icon:hover {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(1deg) brightness(105%) contrast(102%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--colorDarkCyan);
+}
+
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        min-height: 110vh;
+    }
+
+    .juice {
+        height: 110vh;
+        width: auto;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+    }
+
+    h1 {
+        font-size: 52px;
+        padding: 30px 20;
+    }
+
+    .top_menu {
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        flex-direction: column;
+        background-color: white;
+        color: var(--colorDarkBlue);
+        font-weight: 600;
+        padding: 20px 80px;
+        text-align: center;
+    }
+
+    .top_menu.active {
+        right: 30px;
+    }
+
+    li {
+        margin: 5px;
+    }
+
+    li.top:hover {
+        background-color: var(--colorYellow);
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        margin-top: 150px;
+    }
+
+    .box {
+        flex-direction: column;
+        padding: 0 40px 0 40px;
+    }
+
+    .square {
+        flex-direction: column;
+    }
+
+    article {
+        max-width: 100%;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    div.main>* {
+        max-width: 100%;
+    }
+
+    .first {
+        order: -1;
+    }
+
+    div.main section {
+        text-align: center;
+        padding: 60px;
+    }
+
+    .text {
+        bottom: -20%;
+        padding: 25% 10%;
+    }
+
+    .arrow {
+        margin-top: 0;
+    }
+}
