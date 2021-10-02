@@ -53,7 +53,7 @@ h1 {
     font-family: 'Fraunces';
     text-transform: uppercase;
     letter-spacing: 6px;
-    padding: 50px;
+    padding: 80px 50px;
 }
 
 h2 {
@@ -123,6 +123,7 @@ button:hover:after {
 }
 
 nav {
+    margin-top: 20px;
     padding: 30px;
     display: flex;
     justify-content: space-between;
@@ -245,7 +246,7 @@ footer {
 
 .logo {
     filter: brightness(0) saturate(100%) invert(29%) sepia(10%) saturate(2196%) hue-rotate(116deg) brightness(90%) contrast(88%);
-    margin-bottom: 20px;
+    margin: 30px;
 }
 
 .icon {
