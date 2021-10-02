@@ -1,8 +1,8 @@
 This is a solution to the Sunnyside agency landing page challenge on Frontend Mentor.
 
-Live Site URL: 
-Built with
+Live Site URL: https://sunnyside-agency-landing-page-delta.vercel.app/
 
+Built with:
 Semantic HTML5 markup
 CSS custom properties
 Flexbox, Grid
