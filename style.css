@@ -37,7 +37,7 @@ image {
 .arrow {
     display: block;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 0;
 }
 
 header {
@@ -288,7 +288,7 @@ footer {
 
     h1 {
         font-size: 52px;
-        padding: 30px 20;
+        padding: 10px 20px;
     }
 
     .top_menu {
